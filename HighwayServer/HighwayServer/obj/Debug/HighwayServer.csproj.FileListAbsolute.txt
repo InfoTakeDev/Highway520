@@ -1,0 +1,4 @@
+C:\Users\bart\AppData\Local\Temporary Projects\HighwayServer\bin\Debug\HighwayServer.dll
+C:\Users\bart\AppData\Local\Temporary Projects\HighwayServer\bin\Debug\HighwayServer.pdb
+C:\Users\bart\AppData\Local\Temporary Projects\HighwayServer\obj\Debug\HighwayServer.dll
+C:\Users\bart\AppData\Local\Temporary Projects\HighwayServer\obj\Debug\HighwayServer.pdb

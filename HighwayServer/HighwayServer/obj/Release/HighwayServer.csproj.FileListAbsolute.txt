@@ -1,0 +1,8 @@
+C:\Users\bart\AppData\Local\Temporary Projects\HighwayServer\bin\Release\HighwayServer.dll
+C:\Users\bart\AppData\Local\Temporary Projects\HighwayServer\bin\Release\HighwayServer.pdb
+C:\Users\bart\AppData\Local\Temporary Projects\HighwayServer\obj\Release\HighwayServer.dll
+C:\Users\bart\AppData\Local\Temporary Projects\HighwayServer\obj\Release\HighwayServer.pdb
+C:\Users\bart\Documents\Visual Studio 2010\Projects\HighwayServer\HighwayServer\obj\Release\HighwayServer.dll
+C:\Users\bart\Documents\Visual Studio 2010\Projects\HighwayServer\HighwayServer\obj\Release\HighwayServer.pdb
+C:\Users\bart\Documents\Visual Studio 2010\Projects\HighwayServer\HighwayServer\bin\Release\HighwayServer.dll
+C:\Users\bart\Documents\Visual Studio 2010\Projects\HighwayServer\HighwayServer\bin\Release\HighwayServer.pdb
