@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using Highway520;
 using System.Collections;
 
+
 namespace WpfApplication1
 {
     /// <summary>
@@ -38,6 +39,14 @@ namespace WpfApplication1
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+           
+            
+            if (listBox_freeway.SelectedItem==null)
+            {
+                MessageBox.Show("You must select a highway", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            this.Cursor = Cursors.Wait;
             string str = listBox_freeway.SelectedItem.ToString();
             string []tmpstr = str.Split('-');
             GeneralInfo tmphw = new GeneralInfo();
@@ -45,20 +54,24 @@ namespace WpfApplication1
             tmphw.Name=tmpstr[1];
             Highway hwobj = hwserver.getHighwayObject(tmphw);
             ArrayList seclist = hwobj.getSectionList();
-            foreach (GeneralInfo item in seclist)
-            {
-                listBox_section.Items.Add(item.ID + "-" + item.Name);
+            //foreach (GeneralInfo item in seclist)
+            //{
+                //listBox_section.Items.Add(item.ID + "-" + item.Name);
                 // .Show(item.ID + " " + item.Name);
-            }
+            //}
             Highway520.Section secobj = hwobj.getSectionObject((GeneralInfo)seclist[0], (GeneralInfo)seclist[seclist.Count-1]);
             ArrayList nodelist = secobj.getTrafficNodeList();
-
+            string msg = "";
             foreach (NodeInfo item in nodelist)
             {
-                listBox_traffic
-.Items.Add(item.Direction + " " + item.Speed.SN_WE + " " + item.Speed.NS_EW + " " + item.Name);
+                
+                if (item.Direction > 2)
+                    msg = item.Name + " - 東向 時速" + item.Speed.SN_WE + "- 西向 時速" + item.Speed.NS_EW ;
+                else
+                    msg = item.Name + " - 北上 時速" + item.Speed.SN_WE + "- 南下 時速" + item.Speed.NS_EW ;
+                listBox_traffic.Items.Add(msg);
             }
-            
+            this.Cursor = Cursors.None;
             
         }
     }
