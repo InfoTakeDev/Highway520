@@ -113,20 +113,38 @@ namespace Highway520
 
     class Tool
     {
+        Int32 Timeout = 10000; // set default timeout to 10 second
+
+        public void setTimeout(Int32 timeout)
+        {
+            this.Timeout = timeout;
+        }
 
 
+        // return "" for timeout or URI error
         public string queryInfo(string URI)
         {
-            System.Net.WebRequest req = System.Net.WebRequest.Create(URI);
-            System.Net.WebResponse resp = req.GetResponse();
-            System.IO.StreamReader sr = new System.IO.StreamReader(resp.GetResponseStream());
-            return sr.ReadToEnd().Trim();
+            try
+            {
+                System.Net.WebRequest req = System.Net.WebRequest.Create(URI);
+                req.Timeout = this.Timeout;
+                System.Net.WebResponse resp = req.GetResponse();
+                System.IO.StreamReader sr = new System.IO.StreamReader(resp.GetResponseStream());
+                return sr.ReadToEnd().Trim();
+            }
+            catch (Exception e)
+            {
+                return "";
+            }
         }
 
         public ArrayList ParseInfo(string dom)
         {
-            XDocument doc = XDocument.Parse(dom);
             ArrayList infoList = new ArrayList();
+            if (dom == "")
+                return infoList;
+            XDocument doc = XDocument.Parse(dom);
+            
             foreach (XElement el in doc.Root.Elements())
             {
                 GeneralInfo gi = new GeneralInfo();
@@ -139,6 +157,10 @@ namespace Highway520
 
         public ArrayList parseSpeed(string dom)
         {
+            ArrayList NodeList = new ArrayList();
+            if (dom == "")
+                return NodeList;
+
             int idx = dom.IndexOf("<script type=");
             int direction = 1;
             if (idx != -1)
@@ -162,7 +184,7 @@ namespace Highway520
             }
 
             XDocument doc = XDocument.Parse(dom);
-            ArrayList NodeList = new ArrayList();
+            
 
             foreach (XElement childtr in doc.Root.Elements())
             {
@@ -190,5 +212,23 @@ namespace Highway520
             return NodeList;
         }
 
+    }
+
+
+    class Program
+    {
+        static void Main(string []args)
+        {
+            Console.WriteLine("test");
+            HighwayServer hwserver = new HighwayServer();
+            ArrayList hwlist = hwserver.getHighwayList();
+            foreach (GeneralInfo item in hwlist)
+            {
+                Console.WriteLine(item.ID + "-" + item.Name);
+                //listBox_freeway.Items.Add(item.ID);
+
+            }
+            Console.ReadLine();
+        }
     }
 }

@@ -62,6 +62,7 @@ namespace WpfApplication1
             Highway520.Section secobj = hwobj.getSectionObject((GeneralInfo)seclist[0], (GeneralInfo)seclist[seclist.Count-1]);
             ArrayList nodelist = secobj.getTrafficNodeList();
             string msg = "";
+            listBox_traffic.Items.Clear();
             foreach (NodeInfo item in nodelist)
             {
                 
@@ -71,7 +72,7 @@ namespace WpfApplication1
                     msg = item.Name + " - 北上 時速" + item.Speed.SN_WE + "- 南下 時速" + item.Speed.NS_EW ;
                 listBox_traffic.Items.Add(msg);
             }
-            this.Cursor = Cursors.None;
+            this.Cursor = Cursors.Arrow;
             
         }
     }

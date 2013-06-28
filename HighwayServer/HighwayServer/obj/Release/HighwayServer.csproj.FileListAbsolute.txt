@@ -6,3 +6,7 @@ C:\Users\bart\Documents\Visual Studio 2010\Projects\HighwayServer\HighwayServer\
 C:\Users\bart\Documents\Visual Studio 2010\Projects\HighwayServer\HighwayServer\obj\Release\HighwayServer.pdb
 C:\Users\bart\Documents\Visual Studio 2010\Projects\HighwayServer\HighwayServer\bin\Release\HighwayServer.dll
 C:\Users\bart\Documents\Visual Studio 2010\Projects\HighwayServer\HighwayServer\bin\Release\HighwayServer.pdb
+C:\Users\bart\Documents\Highway520\HighwayServer\HighwayServer\obj\Release\HighwayServer.pdb
+C:\Users\bart\Documents\Highway520\HighwayServer\HighwayServer\bin\Release\HighwayServer.exe
+C:\Users\bart\Documents\Highway520\HighwayServer\HighwayServer\bin\Release\HighwayServer.pdb
+C:\Users\bart\Documents\Highway520\HighwayServer\HighwayServer\obj\Release\HighwayServer.exe
