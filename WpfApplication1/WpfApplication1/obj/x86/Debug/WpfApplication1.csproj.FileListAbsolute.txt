@@ -61,3 +61,4 @@ C:\Users\bart\Documents\Highway520\WpfApplication1\WpfApplication1\obj\x86\Debug
 C:\Users\bart\Documents\Highway520\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.exe.manifest
 C:\Users\bart\Documents\Highway520\WpfApplication1\WpfApplication1\obj\x86\Debug\WpfApplication1.application
 C:\Users\bart\Documents\Highway520\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+H:\WorkSpace\Highway520\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config

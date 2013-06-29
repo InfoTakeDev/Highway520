@@ -1,11 +1,11 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Collections; // for ArrayList
-
 namespace Highway520
 {
     public struct GeneralInfo
@@ -51,11 +51,15 @@ namespace Highway520
             }
 
         }
+        public string getURI()
+        {
+            return HighwayServer.BaseURI + "/traffic/getsectraffic/fid/" + this.HWID + "/from/" + StartID + "/end/" + EndID;
+        }
+
         public ArrayList getTrafficNodeList()
         {
-            string querytrafficlist = HighwayServer.BaseURI + "/traffic/getsectraffic/fid/" + this.HWID + "/from/" + StartID + "/end/" + EndID;
             Tool tl = new Tool();
-            string sbstr = tl.queryInfo(querytrafficlist);
+            string sbstr = tl.queryInfo(this.getURI());
             ArrayList nodelist = tl.parseSpeed(sbstr);
             return nodelist;
         }
@@ -69,12 +73,16 @@ namespace Highway520
             this.HighwayID = hwid;
         }
 
+        public string getURI()
+        {
+            return  HighwayServer.BaseURI + "/common/getnodsecs/fid/" + this.HighwayID + "?lc=1&id=end_selt";
+        }
+
         // getSectoinList
         public ArrayList getSectionList()
         {
-            string queryseclist = HighwayServer.BaseURI + "/common/getnodsecs/fid/" + this.HighwayID + "?lc=1&id=end_selt";
             Tool tl = new Tool();
-            string sbstr = tl.queryInfo(queryseclist);
+            string sbstr = tl.queryInfo(this.getURI());
             ArrayList seclist = tl.ParseInfo(sbstr);
             return seclist;
         }
@@ -94,11 +102,15 @@ namespace Highway520
         {
         }
 
+        public string getURI()
+        {
+            return BaseURI + "/common/getfrees?id=sec_selt&df=1"; 
+        }
+
         public ArrayList getHighwayList()
         {
-            string queryhwlist = BaseURI + "/common/getfrees?id=sec_selt&df=1";
             Tool tl = new Tool();
-            string sbstr = tl.queryInfo(queryhwlist);
+            string sbstr = tl.queryInfoInDB(this.getURI());
             ArrayList hwlist = tl.ParseInfo(sbstr);
             return hwlist;
         }
@@ -111,10 +123,65 @@ namespace Highway520
 
     }
 
+    // use xml file
+    class HighwayDB
+    {
+        // initialize database.
+        public HighwayDB()
+        {
+        }
+
+        public void updateSectionDB()
+        {
+
+
+            //Console.WriteLine(Uri.EscapeDataString(URI));
+            //using (StreamWriter sw = new StreamWriter(Uri.EscapeDataString(URI) + ".xml"))   //小寫TXT     
+            //{
+                //sw.Write(output);
+            //}
+        }
+        public void updateHighwayDB()
+        {
+            HighwayServer hwserver = new HighwayServer();
+
+            string uri = hwserver.getURI();
+            Tool tl = new Tool();
+            string sbstr = tl.queryInfo(uri);
+            Console.Write("Update Highway list...");
+            using (StreamWriter sw = new StreamWriter(Uri.EscapeDataString(uri) + ".xml"))   //小寫TXT     
+            {
+                sw.Write(sbstr);
+            }
+            Console.WriteLine("\t\tDone.");
+            /*foreach (GeneralInfo item in hwlist)
+            {
+                Console.WriteLine(item.ID + "-" + item.Name);
+
+
+                Highway hwobj = hwserver.getHighwayObject(item);
+                ArrayList seclist = hwobj.getSectionList();
+
+                //listBox_freeway.Items.Add(item.ID);
+
+            }*/
+
+            //Console.WriteLine(Uri.EscapeDataString(URI));
+            //using (StreamWriter sw = new StreamWriter(Uri.EscapeDataString(URI) + ".xml"))   //小寫TXT     
+            //{
+            //sw.Write(output);
+            //}
+            // you have to update section DB if you update highway DB.
+        }
+
+
+    }
+
     class Tool
     {
         Int32 Timeout = 10000; // set default timeout to 10 second
 
+       
         public void setTimeout(Int32 timeout)
         {
             this.Timeout = timeout;
@@ -122,21 +189,48 @@ namespace Highway520
 
 
         // return "" for timeout or URI error
-        public string queryInfo(string URI)
+        public string queryInfoInDB(string URI)
         {
+            // read comtent in db
             try
             {
+                using (StreamReader sr = new StreamReader(Uri.EscapeDataString(URI)+".xml"))
+                {
+                    return sr.ReadToEnd().Trim();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.StackTrace);
+                return "";
+            }
+            
+        }
+        
+        //public caculateTime(){
+        //}
+
+        public string queryInfo(string URI)
+        {
+            
+            try
+            {
+               
                 System.Net.WebRequest req = System.Net.WebRequest.Create(URI);
                 req.Timeout = this.Timeout;
                 System.Net.WebResponse resp = req.GetResponse();
                 System.IO.StreamReader sr = new System.IO.StreamReader(resp.GetResponseStream());
-                return sr.ReadToEnd().Trim();
+                string output = sr.ReadToEnd().Trim();
+                return output;
             }
             catch (Exception e)
             {
+                Console.WriteLine(e.StackTrace);
                 return "";
             }
         }
+
+
 
         public ArrayList ParseInfo(string dom)
         {
@@ -219,15 +313,25 @@ namespace Highway520
     {
         static void Main(string []args)
         {
+            DateTime startTime = DateTime.Now;
             Console.WriteLine("test");
-            HighwayServer hwserver = new HighwayServer();
-            ArrayList hwlist = hwserver.getHighwayList();
+            HighwayDB db = new HighwayDB();
+            //db.updateHighwayDB();
+            HighwayServer hs = new HighwayServer();
+            ArrayList hwlist = hs.getHighwayList();
+
+
             foreach (GeneralInfo item in hwlist)
             {
-                Console.WriteLine(item.ID + "-" + item.Name);
-                //listBox_freeway.Items.Add(item.ID);
-
+               Console.WriteLine(item.ID + "-" + item.Name);
             }
+
+            // cacuate the time eslape
+            DateTime endTime = DateTime.Now;
+            TimeSpan span = endTime.Subtract(startTime);
+            Console.WriteLine("Time Difference (milliseconds): " + span.Milliseconds);
+            Console.WriteLine("Time Difference (seconds): " + span.Seconds);
+            Console.WriteLine("Time Difference (minutes): " + span.Minutes);
             Console.ReadLine();
         }
     }

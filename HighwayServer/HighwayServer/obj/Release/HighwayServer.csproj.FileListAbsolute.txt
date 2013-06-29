@@ -10,3 +10,8 @@ C:\Users\bart\Documents\Highway520\HighwayServer\HighwayServer\obj\Release\Highw
 C:\Users\bart\Documents\Highway520\HighwayServer\HighwayServer\bin\Release\HighwayServer.exe
 C:\Users\bart\Documents\Highway520\HighwayServer\HighwayServer\bin\Release\HighwayServer.pdb
 C:\Users\bart\Documents\Highway520\HighwayServer\HighwayServer\obj\Release\HighwayServer.exe
+H:\WorkSpace\Highway520\HighwayServer\HighwayServer\obj\Release\HighwayServer.pdb
+H:\WorkSpace\Highway520\HighwayServer\HighwayServer\bin\Release\HighwayServer.pdb
+H:\WorkSpace\Highway520\HighwayServer\HighwayServer\obj\Release\HighwayServer.csprojResolveAssemblyReference.cache
+H:\WorkSpace\Highway520\HighwayServer\HighwayServer\bin\Release\HighwayServer.exe
+H:\WorkSpace\Highway520\HighwayServer\HighwayServer\obj\Release\HighwayServer.exe
