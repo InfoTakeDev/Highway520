@@ -1,0 +1,8 @@
+<select id="end_selt">
+		<option value="20400">鶯歌系統</option>
+	<option value="18500">大湳</option>
+	<option value="11600">南桃園</option>
+	<option value="8600">機場系統</option>
+	<option value="5000">大竹</option>
+	<option value="900">大園</option>
+</select>

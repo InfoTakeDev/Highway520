@@ -1,0 +1,11 @@
+<select id="end_selt">
+		<option value="15000">北屯端</option>
+	<option value="13000">北屯</option>
+	<option value="10940">西屯三</option>
+	<option value="10000">西屯二</option>
+	<option value="8900">西屯一</option>
+	<option value="7140">南屯二</option>
+	<option value="5500">南屯一</option>
+	<option value="4000">高鐵台中</option>
+	<option value="1650">成功</option>
+</select>

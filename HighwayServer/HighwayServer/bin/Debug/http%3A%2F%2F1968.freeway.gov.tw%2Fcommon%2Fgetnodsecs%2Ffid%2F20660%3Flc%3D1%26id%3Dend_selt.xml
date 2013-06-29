@@ -1,0 +1,9 @@
+<select id="end_selt">
+		<option value="27200">大溪端</option>
+	<option value="23200">平鎮三</option>
+	<option value="20700">平鎮二</option>
+	<option value="19000">平鎮一</option>
+	<option value="18000">平鎮系統</option>
+	<option value="10800">新屋</option>
+	<option value="5580">觀音一</option>
+</select>

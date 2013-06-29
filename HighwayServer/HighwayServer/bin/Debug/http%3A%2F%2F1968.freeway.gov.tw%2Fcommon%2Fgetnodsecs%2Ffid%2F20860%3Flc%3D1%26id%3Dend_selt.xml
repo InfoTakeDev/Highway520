@@ -1,0 +1,9 @@
+<select id="end_selt">
+		<option value="20000">關廟</option>
+	<option value="18900">台19甲</option>
+	<option value="16900">歸仁</option>
+	<option value="11800">大潭</option>
+	<option value="10260">上崙</option>
+	<option value="8740">仁德系統</option>
+	<option value="5310">台南</option>
+</select>

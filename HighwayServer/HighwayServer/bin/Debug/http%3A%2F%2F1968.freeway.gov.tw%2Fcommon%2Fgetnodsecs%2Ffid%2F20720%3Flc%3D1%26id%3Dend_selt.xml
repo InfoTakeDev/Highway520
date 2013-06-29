@@ -1,0 +1,14 @@
+<select id="end_selt">
+		<option value="31042">獅潭端</option>
+	<option value="29550">開礦村三號</option>
+	<option value="28420">開礦村二號</option>
+	<option value="26100">開礦村一號</option>
+	<option value="24550">石圍牆</option>
+	<option value="22610">119甲</option>
+	<option value="20590">銅鑼</option>
+	<option value="15760">公館</option>
+	<option value="11806">頭屋二</option>
+	<option value="10120">頭屋一</option>
+	<option value="6550">造橋</option>
+	<option value="5000">新港</option>
+</select>

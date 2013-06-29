@@ -1,0 +1,8 @@
+<select id="end_selt">
+		<option value="33800">旗山端</option>
+	<option value="22600">嶺口</option>
+	<option value="19700">燕巢系統</option>
+	<option value="13000">燕巢</option>
+	<option value="6700">仁武</option>
+	<option value="1900">鼎金系統</option>
+</select>

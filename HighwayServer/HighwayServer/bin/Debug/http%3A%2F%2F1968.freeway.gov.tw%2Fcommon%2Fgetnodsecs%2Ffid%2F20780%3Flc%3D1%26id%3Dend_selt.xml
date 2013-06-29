@@ -1,0 +1,10 @@
+<select id="end_selt">
+		<option value="43520">古坑系統</option>
+	<option value="39370">古坑</option>
+	<option value="32575">斗南</option>
+	<option value="30430">雲林系統</option>
+	<option value="25420">虎尾</option>
+	<option value="22500">土庫</option>
+	<option value="15230">元長</option>
+	<option value="8040">東勢</option>
+</select>

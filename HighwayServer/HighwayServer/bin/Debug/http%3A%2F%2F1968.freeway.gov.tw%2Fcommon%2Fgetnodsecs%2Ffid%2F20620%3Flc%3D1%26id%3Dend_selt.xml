@@ -1,0 +1,8 @@
+<select id="end_selt">
+		<option value="18760">瑞濱端</option>
+	<option value="16000">瑞芳</option>
+	<option value="9400">暖暖</option>
+	<option value="5500">大華系統</option>
+	<option value="3700">七堵</option>
+	<option value="2000">瑪東系統</option>
+</select>

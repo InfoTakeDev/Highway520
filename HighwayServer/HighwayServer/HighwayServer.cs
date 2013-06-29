@@ -131,15 +131,17 @@ namespace Highway520
         {
         }
 
-        public void updateSectionDB()
+        public void updateSectionDB(Highway hwobj)
         {
-
-
-            //Console.WriteLine(Uri.EscapeDataString(URI));
-            //using (StreamWriter sw = new StreamWriter(Uri.EscapeDataString(URI) + ".xml"))   //小寫TXT     
-            //{
-                //sw.Write(output);
-            //}
+            Tool tl = new Tool();
+            string uri = hwobj.getURI();
+            string sbstr = tl.queryInfo(uri);
+            Console.Write("Update Section list...");
+            using (StreamWriter sw = new StreamWriter(Uri.EscapeDataString(uri) + ".xml"))
+            {
+                sw.Write(sbstr);
+            }
+            Console.WriteLine("\t\tDone.");
         }
         public void updateHighwayDB()
         {
@@ -149,29 +151,20 @@ namespace Highway520
             Tool tl = new Tool();
             string sbstr = tl.queryInfo(uri);
             Console.Write("Update Highway list...");
-            using (StreamWriter sw = new StreamWriter(Uri.EscapeDataString(uri) + ".xml"))   //小寫TXT     
+            using (StreamWriter sw = new StreamWriter(Uri.EscapeDataString(uri) + ".xml"))    
             {
                 sw.Write(sbstr);
             }
             Console.WriteLine("\t\tDone.");
-            /*foreach (GeneralInfo item in hwlist)
+
+            // already get the data from DB.            
+            ArrayList hwlist = hwserver.getHighwayList();
+
+            foreach (GeneralInfo item in hwlist)
             {
-                Console.WriteLine(item.ID + "-" + item.Name);
+                updateSectionDB(hwserver.getHighwayObject(item));
+            }
 
-
-                Highway hwobj = hwserver.getHighwayObject(item);
-                ArrayList seclist = hwobj.getSectionList();
-
-                //listBox_freeway.Items.Add(item.ID);
-
-            }*/
-
-            //Console.WriteLine(Uri.EscapeDataString(URI));
-            //using (StreamWriter sw = new StreamWriter(Uri.EscapeDataString(URI) + ".xml"))   //小寫TXT     
-            //{
-            //sw.Write(output);
-            //}
-            // you have to update section DB if you update highway DB.
         }
 
 

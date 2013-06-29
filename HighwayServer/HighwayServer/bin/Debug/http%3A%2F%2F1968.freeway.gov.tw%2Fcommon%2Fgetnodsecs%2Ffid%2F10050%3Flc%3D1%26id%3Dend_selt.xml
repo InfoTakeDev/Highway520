@@ -1,0 +1,9 @@
+<select id="end_selt">
+		<option value="54300">蘇澳</option>
+	<option value="46700">羅東</option>
+	<option value="38600">宜蘭</option>
+	<option value="30300">頭城</option>
+	<option value="29700">頭城收費站</option>
+	<option value="14700">坪林行控</option>
+	<option value="4000">石碇</option>
+</select>

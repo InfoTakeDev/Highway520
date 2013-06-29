@@ -1,0 +1,13 @@
+<select id="end_selt">
+		<option value="28668">新店端</option>
+	<option value="26550">中和二</option>
+	<option value="23750">中和</option>
+	<option value="22450">中和一</option>
+	<option value="20821">板橋</option>
+	<option value="17820">江子翠</option>
+	<option value="15020">三重</option>
+	<option value="11820">五股二</option>
+	<option value="10000">五股一</option>
+	<option value="6480">觀音山</option>
+	<option value="850">八里</option>
+</select>

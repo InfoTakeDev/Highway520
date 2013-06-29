@@ -1,0 +1,9 @@
+<select id="end_selt">
+		<option value="34740">水上系統</option>
+	<option value="32700">嘉義</option>
+	<option value="30570">中和</option>
+	<option value="25890">水上</option>
+	<option value="22535">嘉義系統</option>
+	<option value="18620">鹿草</option>
+	<option value="14385">祥和</option>
+</select>

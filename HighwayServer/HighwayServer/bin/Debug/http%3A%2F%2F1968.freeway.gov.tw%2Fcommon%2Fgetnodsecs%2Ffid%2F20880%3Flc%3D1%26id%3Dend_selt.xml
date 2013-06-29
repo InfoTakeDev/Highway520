@@ -1,0 +1,8 @@
+<select id="end_selt">
+		<option value="22500">竹田端</option>
+	<option value="21150">竹田系統</option>
+	<option value="15800">萬丹</option>
+	<option value="9680">大發</option>
+	<option value="7025">大寮</option>
+	<option value="2200">鳳山</option>
+</select>

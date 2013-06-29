@@ -1,0 +1,9 @@
+<select id="end_selt">
+		<option value="23529">竹東端</option>
+	<option value="20000">竹東</option>
+	<option value="15800">芎林</option>
+	<option value="10200">新竹科園</option>
+	<option value="7500">新竹二</option>
+	<option value="5000">新竹一</option>
+	<option value="900">南寮端</option>
+</select>

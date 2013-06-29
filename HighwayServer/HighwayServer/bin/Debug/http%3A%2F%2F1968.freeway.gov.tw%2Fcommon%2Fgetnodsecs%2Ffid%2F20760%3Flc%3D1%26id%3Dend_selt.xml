@@ -1,0 +1,7 @@
+<select id="end_selt">
+		<option value="32600">中興系統</option>
+	<option value="26800">林厝</option>
+	<option value="22880">員林</option>
+	<option value="19070">埔心</option>
+	<option value="15250">埔鹽系統</option>
+</select>

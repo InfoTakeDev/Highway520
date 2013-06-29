@@ -6,3 +6,4 @@ H:\WorkSpace\Highway520\HighwayServer\HighwayServer\obj\Debug\HighwayServer.pdb
 H:\WorkSpace\Highway520\HighwayServer\HighwayServer\bin\Debug\HighwayServer.exe
 H:\WorkSpace\Highway520\HighwayServer\HighwayServer\bin\Debug\HighwayServer.pdb
 H:\WorkSpace\Highway520\HighwayServer\HighwayServer\obj\Debug\HighwayServer.exe
+H:\WorkSpace\Highway520\HighwayServer\HighwayServer\obj\Debug\HighwayServer.csprojResolveAssemblyReference.cache

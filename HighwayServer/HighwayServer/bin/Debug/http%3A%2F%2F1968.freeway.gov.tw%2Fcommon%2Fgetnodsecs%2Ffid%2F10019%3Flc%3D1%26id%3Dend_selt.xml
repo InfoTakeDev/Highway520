@@ -1,0 +1,11 @@
+<select id="end_selt">
+		<option value="70500">楊梅端</option>
+	<option value="60300">中壢轉接二</option>
+	<option value="58650">中壢轉接一</option>
+	<option value="52500">機場系統</option>
+	<option value="36000">泰山轉接道</option>
+	<option value="32100">五股轉接道</option>
+	<option value="26100">環北</option>
+	<option value="20700">下塔悠</option>
+	<option value="18800">堤頂</option>
+</select>

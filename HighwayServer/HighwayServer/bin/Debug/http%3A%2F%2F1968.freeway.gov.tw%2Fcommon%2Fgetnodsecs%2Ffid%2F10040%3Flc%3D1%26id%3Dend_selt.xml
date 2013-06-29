@@ -1,0 +1,7 @@
+<select id="end_selt">
+		<option value="17160">豐原端</option>
+	<option value="14300">后豐</option>
+	<option value="11700">台中系統</option>
+	<option value="9000">神岡</option>
+	<option value="2300">中港系統</option>
+</select>

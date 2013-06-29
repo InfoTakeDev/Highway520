@@ -1,0 +1,8 @@
+<select id="end_selt">
+		<option value="37300">埔里端</option>
+	<option value="34000">埔里</option>
+	<option value="29000">愛蘭</option>
+	<option value="17000">國姓</option>
+	<option value="5000">東草屯</option>
+	<option value="3000">舊正</option>
+</select>
