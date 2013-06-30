@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Collections; // for ArrayList
+using System.Reflection;
+
 namespace Highway520
 {
     public struct GeneralInfo
@@ -122,7 +124,7 @@ namespace Highway520
         }
 
     }
-
+    /*
     // use xml file
     class HighwayDB
     {
@@ -168,7 +170,7 @@ namespace Highway520
         }
 
 
-    }
+    }*/
 
     class Tool
     {
@@ -180,6 +182,39 @@ namespace Highway520
             this.Timeout = timeout;
         }
 
+        public string findRes()
+        {
+            System.Reflection.Assembly thisExe;
+            thisExe = System.Reflection.Assembly.GetExecutingAssembly();
+            string[] resources = thisExe.GetManifestResourceNames();
+            string list = "";
+
+            // Build the string of resources.
+            foreach (string resource in resources)
+                list += resource + "\r\n";
+            return list;
+        }
+
+        public string GetResourceTextFile(string folder, string filename)
+        {
+
+            string result = string.Empty;
+            string location = "HighwayServer.Properties."+folder+"."+filename;
+            using (Stream stream = this.GetType().Assembly.
+                       GetManifestResourceStream(location))
+            {
+                if (stream == null)
+                {
+                    Console.WriteLine("not found");
+                    return "";
+                }
+                using (StreamReader sr = new StreamReader(stream))
+                {
+                    result = sr.ReadToEnd();
+                }
+            }
+            return result;
+        }
 
         // return "" for timeout or URI error
         public string queryInfoInDB(string URI)
@@ -187,10 +222,8 @@ namespace Highway520
             // read comtent in db
             try
             {
-                using (StreamReader sr = new StreamReader(Uri.EscapeDataString(URI)+".xml"))
-                {
-                    return sr.ReadToEnd().Trim();
-                }
+                return GetResourceTextFile("folder", URI + ".xml");
+                
             }
             catch (Exception e)
             {
@@ -301,14 +334,16 @@ namespace Highway520
 
     }
 
-
+    /*
     class Program
     {
         static void Main(string []args)
         {
             DateTime startTime = DateTime.Now;
+
             Console.WriteLine("test");
-            HighwayDB db = new HighwayDB();
+            
+            //HighwayDB db = new HighwayDB();
             //db.updateHighwayDB();
             HighwayServer hs = new HighwayServer();
             ArrayList hwlist = hs.getHighwayList();
@@ -318,7 +353,11 @@ namespace Highway520
             {
                Console.WriteLine(item.ID + "-" + item.Name);
             }
+            Tool tl = new Tool();
 
+            //string fileContents = tl.GetResourceTextFile("test.txt");
+            Console.WriteLine(tl.findRes());
+            //Console.WriteLine(fileContents);
             // cacuate the time eslape
             DateTime endTime = DateTime.Now;
             TimeSpan span = endTime.Subtract(startTime);
@@ -327,5 +366,5 @@ namespace Highway520
             Console.WriteLine("Time Difference (minutes): " + span.Minutes);
             Console.ReadLine();
         }
-    }
+    }*/
 }

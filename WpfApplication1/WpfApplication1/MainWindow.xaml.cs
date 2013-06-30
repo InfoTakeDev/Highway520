@@ -22,7 +22,8 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
-        HighwayServer hwserver;
+        HighwayServer t;
+        //HighwayServer hwserver=null;
         public MainWindow()
         {
             

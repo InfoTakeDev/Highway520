@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetfrees_3Fid_3Dsec_selt_26df_3D1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetfrees%3Fid%3Dsec_selt%26df%3D1.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10010_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10010%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10019_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10019%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10020_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10020%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10030_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10030%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10031_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10031%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10038_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10038%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10039_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10039%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10040_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10040%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10050_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10050%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10060_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10060%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10080_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10080%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F10100_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F10100%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20620_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20620%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20640_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20640%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20660_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20660%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20680_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20680%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20720_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20720%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20740_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20740%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20760_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20760%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20780_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20780%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20820_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20820%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20840_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20840%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20860_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20860%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="http_3A_2F_2F1968_freeway_gov_tw_2Fcommon_2Fgetnodsecs_2Ffid_2F20880_3Flc_3D1_26id_3Dend_selt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\http%3A%2F%2F1968.freeway.gov.tw%2Fcommon%2Fgetnodsecs%2Ffid%2F20880%3Flc%3D1%26id%3Dend_selt.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\test.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;big5</value>
+  </data>
+  <data name="test1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>folder\test.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;big5</value>
+  </data>
+</root>

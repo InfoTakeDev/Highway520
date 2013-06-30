@@ -75,8 +75,9 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HighwayServer">
-      <HintPath>..\..\HighwayServer\HighwayServer\bin\Release\HighwayServer.dll</HintPath>
+    <Reference Include="HighwayServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\HighwayServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
